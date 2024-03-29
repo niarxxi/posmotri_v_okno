@@ -117,9 +117,9 @@ video {
 }
 
 .search-form__textfield {
-  border-top: 1px solid #fff;
+  border-top: 1px solid currentColor;
   border-right: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid currentColor;
   border-left: none;
   padding: 2px 0;
   color: currentColor;
@@ -143,10 +143,6 @@ video {
 }
 
 .search-form__textfield:focus {
-  outline: none;
-}
-
-.search-form__textfield:focus-visible {
   outline: none;
 }
 
@@ -221,13 +217,8 @@ video {
 
 .content__list {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
   block-size: 298px;
-  scrollbar-width: none;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none;
 }
 
 .content__details {
